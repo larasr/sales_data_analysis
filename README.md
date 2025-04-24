@@ -35,8 +35,9 @@ O conjunto de dados escolhido pode ser acessado no Kaggle: [Sales Data](https://
 ### 4. Power BI
 - O arquivo `report.pbix` pode ser aberto no Power BI Desktop para visualizar o relatórios interativo e os gráficos.
 
-## Estrutura do Repositório:
+## Estrutura do Repositório
 - **data/**: Dados brutos e tratados.
+  - `extract_data`: Código simples em python.
   - `raw_data.csv`: Dados originais no formato csv.
   - `raw_data.xlsx`: Dados originais no formato xlsx.
   - `cleaned_data.xlsx`: Dados tratados no formato xlsx.
@@ -44,3 +45,12 @@ O conjunto de dados escolhido pode ser acessado no Kaggle: [Sales Data](https://
   - `queries.sql`: Consultas SQL para extrair os dados.
 - **powerbi/**: Relatórios do Power BI.
   - `report.pbix`: Relatório Power BI com visualizações.
+ 
+## Considerações
+- O uso do Python para realizar o download do conjunto de dados e convertê-lo de .csv para .xlsx é devido a facilidade.
+- Houve poucos tratamentos no Excel, visto que os dados já estavam, originalmente, bem adequados para análise. A fins de facilitação, as colunas finais foram renomeadas e a coluna `Age_Grupo` foi transformada, removendo o intervalo de indicação do grupo. Para tal, considera-se:
+  - Youth: menor que 25 anos;
+  - Young Adults: entre 25 e 34 anos;
+  - Adults: entre 35 anos e 63;
+  - Seniors: acima de 64 anos;
+- De tal modo, as análises mais detalhadas foram realizadas mediante queries via SQL, devido a possibilidade de agrupar e limitar a quantidade de produtos.
