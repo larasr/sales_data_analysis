@@ -52,9 +52,9 @@ O conjunto de dados escolhido pode ser acessado no Kaggle: [Sales Data](https://
   - `cleaned_data.xlsx`: Dados tratados no formato xlsx.
 - **sql/**: Consultas SQL utilizadas no projeto.
   - `create_table.sql`: Criação da tabela.
-  - `load_data.sql`: Carregando dos dados para a tabela.
+  - `load_data.sql`: Carregamento dos dados para a tabela.
   - `queries.sql`: Consultas SQL para extrair informações.
-- **powerbi/**: Relatórios do Power BI.
+- **bi/**: Relatórios do Power BI.
   - `sales_data_report.pbit`: Relatório Power BI.
   - `sales_data_report.png`: Imagem do dashboard.
   - `template_dashboard_vendas.svg`: Template usado no dashboard.
@@ -76,10 +76,10 @@ A ideia inicial deste projeto era exercitar algumas ferramentas comumente utiliz
 - As queries desenvolvidas não foram precisadamente utilizadas - como views, por exemplo - no dashboard, mas auxiliaram na compreensão de alguns padrões em relação as vendas e aos grupos;
 - Pelo dashboard, é possível extrair alguns insights bem evidentes em relação as vendas realizadas:
 
-  1. Acontecem quase que 50% pelos Adultos;
-  2. Há pouca compra realizada pelos Idosos (menos de 1%), o que trás duas questões de negócios
-     - Esse comportamento é esperado, devido aos produtos que são vendidos e não associam a uma prática desta categoria?
-     - Os produtos vendidos não abrangem as reais necessidades desta categoria?
+  1. As compras são realizadas quase 50% pelos Adultos;
+  2. Há pouca compra realizada pelos Idosos (menos de 1%), o que trás duas questões de negócios:
+     - Esse comportamento é esperado, devido aos produtos que são vendidos e não associam a uma prática comum desta categoria?
+     - Os produtos vendidos não abrangem as reais necessidades desta categoria quanto ao uso?
   3. O gênero masculino realiza mais compras que o feminino;
   4. A categoria mais vendida é a de Acessório;
   5. Os Estados Unidos é o país de maior faturamento;
